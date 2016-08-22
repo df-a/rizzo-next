@@ -1,7 +1,7 @@
 <nav class="navigation navigation--{{type}}{{#if images}} navigation--has-images{{else}} navigation--no-images{{/if}}" role="navigation">
   <ul class="navigation__list">
     {{#each navigation}}
-      <li class="js-nav-item navigation__item {{nav_class_names title}}" data-lpa-category="Destinations Next" data-lpa-action="Global Navigation Click" data-lpa-label="{{title}}">
+      <li class="js-nav-item navigation__item {{nav_class_names title}}" data-lpa-category="Global Navigation Click" data-lpa-action="Click" data-lpa-label="{{title}}">
        <a class="navigation__link" href="{{slug}}"{{#if hidden}} hidden{{/if}}>{{title}}</a>
 
         {{#if submenu.items.length}}
@@ -41,7 +41,7 @@
 
     <ul class="mobile-navigation__list">
       {{#each navigation}}
-        <li class="js-nav-item mobile-navigation__item mobile-{{nav_class_names title}}" data-lpa-category="Destinations Next" data-lpa-action="Mobile Global Navigation Click" data-lpa-label="{{title}}">
+        <li class="js-nav-item mobile-navigation__item mobile-{{nav_class_names title}}" data-lpa-category="Global Navigation Click" data-lpa-action="Click" data-lpa-label="{{title}}">
           <a class="mobile-navigation__link" href="{{slug}}">{{title}}
             {{#if submenu}}
               <i class="icon icon--chevron-down" aria-hidden="true"></i>
